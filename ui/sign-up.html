@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Politico | Sign up</title>
+    <link rel="stylesheet" href="css/enter.css" />
+  </head>
+
+  <body>
+    <header id="header" class="page-header">
+      <div class="title">
+        <div class="title-header"><a href="index.html">Politico</a></div>
+      </div>
+    </header>
+
+    <div class="into">
+      <h1>SIGN UP HERE</h1>
+      <p>Join Politico where everything is fair</p>
+    </div>
+    <form class="form" action="" method="post">
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Email Address" />
+      </div>
+      <div class="form-group">
+        <input type="text" name="full-name" placeholder="Fullname" />
+      </div>
+      <div class="form-group">
+        <input type="text" name="state" placeholder="State" />
+      </div>
+      <div class="form-group">
+        <input type="text" name="voter-id" placeholder="Voter ID" />
+      </div>
+      <div class="form-group">
+        <input type="password" name="password" placeholder="password" />
+      </div>
+      <div class="form-group">
+        <input
+          type="password"
+          name="confirm-password"
+          placeholder="confirm password"
+        />
+      </div>
+
+      <div class="form-group">
+        <button class="btn" type="submit">Sign up</button>
+      </div>
+    </form>
+
+    <script>
+      let regularUserCheckbox = document.querySelector(
+        "#user-type-group input#user-radio"
+      );
+      let politicianCheckbox = document.querySelector(
+        "#user-type-group input#politician-radio"
+      );
+
+      function PoliticalPartyFormElementDisplay(display) {
+        let node = document.querySelector("#political-party");
+        if (display) {
+          node.className = "form-group";
+        } else {
+          node.className = "form-group hide";
+        }
+      }
+      regularUserCheckbox.addEventListener("click", function(e) {
+        if (e.target.checked) {
+          PoliticalPartyFormElementDisplay(false);
+        }
+      });
+
+      politicianCheckbox.addEventListener("click", function(e) {
+        if (e.target.checked) {
+          PoliticalPartyFormElementDisplay(true);
+        }
+      });
+    </script>
+  </body>
+</html>

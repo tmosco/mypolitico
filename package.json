@@ -1,0 +1,31 @@
+{
+  "name": "hello",
+  "version": "1.0.0",
+  "description": "simple node app",
+  "main": "app.js",
+  "scripts": {
+    "test": "(mocha||true  .--exit)",
+    "start": "nodemon app"
+  },
+  "author": "Tayo Oyeniyi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "yargs": "^12.0.5"
+  },
+  "devDependencies": {
+    "body-parser": "^1.18.3",
+    "chai": "^4.2.0",
+    "debug": "^4.1.1",
+    "eslint": "^5.13.0",
+    "helmet": "^3.15.0",
+    "http": "0.0.0",
+    "joi": "^14.3.1",
+    "lodash": "^4.17.11",
+    "mocha": "^5.2.0",
+    "mongoose": "^5.4.11",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.9",
+    "supertest": "^3.4.2"
+  }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Politico | Party List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="brand">Politico</a>
+        <nav class="menu" id="main-menu">
+            <button class="menu-toggle" id="toggle-menu">
+                toggle menu
+            </button>
+            <div class="menu-dropdown">
+                <ul class="nav-menu">
+                    <li><a href="./user-dashboard.html">Dashboard</a></li>
+                    <li><a href="./voting-page.html">Vote</a></li>
+                    <li><a href="./cadidate-page.html">Candidate</a></li>
+                    <li><a href="./create-platform.html">Contest</a></li>
+                    <li><a href="./political-party.html" class="active">Political party</a></li>
+                    <li><a href="./index.html">Logout</a></li>
+    
+    
+                </ul>
+            </div>
+        </nav>
+    
+    
+    
+    </header>
+        <section>
+
+            <div class="wrapper">
+                <h1>Political Parties</h1>
+                <div class="table-list">
+                    <div class="party-info">
+                        <table class="table">
+                            <thead class="thead">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Party</th>
+                                    <th>Leader</th>
+                                   
+                                </tr>
+                            </thead>
+                    
+                            <tbody class="tbody">
+                                <tr>
+                                    <td>1</td>
+                                    <td><a class="party-name" href="#">APC</a></td>
+                                    <td>Bello Gambari</td>
+                                   
+                                   
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><a class="party-name" href="#">PDP</a></td>
+                    
+                                    <td>Tosin Fakeye</td>
+                                    
+                                   
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript">
+            (function () {
+                var menuButton = document.getElementById('toggle-menu');
+                menuButton.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    var menu = document.getElementById('main-menu');
+                    menu.classList.toggle('is-open');
+                });
+            })();
+        </script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Politico | Vote</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" class="brand">Politico</a>
+      <nav class="menu" id="main-menu">
+        <button class="menu-toggle" id="toggle-menu">toggle menu</button>
+        <div class="menu-dropdown">
+          <ul class="nav-menu">
+            <li><a href="./user-dashboard.html">Dashboard</a></li>
+            <li><a href="./voting-page.html" class="active">Vote</a></li>
+            <li><a href="./cadidate-page.html">Candidate</a></li>
+            <li><a href="./create-platform.html">Contest</a></li>
+            <li><a href="./political-party.html">Political party</a></li>
+            <li><a href="./index.html">Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="vote-1">
+      <div class="vote-header">Vote for your Favorite Candidate</div>
+      <div class="vote-form">
+        <div class="vote-office">
+          <div class="office-name">Governor</div>
+          <div class="vote-field">
+            <form action="">
+              <div class="candidate">
+                <div class="candidate-party">APC</div>
+                <label for="vote-radio">Oyeniyi Omotayo</label>
+                <input
+                  id="candidate-radio"
+                  type="radio"
+                  name="candidate"
+                  value=""
+                />
+              </div>
+              <div class="candidate">
+                <div class="candidate-party">APC</div>
+                <label for="vote-radio">Oyeniyi Omotayo</label>
+                <input
+                  id="candidate-radio"
+                  type="radio"
+                  name="candidate"
+                  value=""
+                />
+              </div>
+              <div class="candidate">
+                <div class="candidate-party">APC</div>
+                <label for="vote-radio">Oyeniyi Omotayo</label>
+                <input
+                  id="candidate-radio"
+                  type="radio"
+                  name="candidate"
+                  value=""
+                />
+              </div>
+              <div class="candidate">
+                <div class="candidate-party">APC</div>
+                <label for="vote-radio">Oyeniyi Omotayo</label>
+                <input
+                  id="candidate-radio"
+                  type="radio"
+                  name="candidate"
+                  value=""
+                />
+              </div>
+              <input type="submit" class="vote-btn" value="Vote" />
+            </form>
+          </div>
+        </div>
+        <div class="vote-office">
+          <div class="office-name">President</div>
+          <div class="vote-field">
+            <form action="">
+              <div class="candidate">
+                <div class="candidate-party">APC</div>
+                <label for="vote-radio">Oyeniyi Omotayo</label>
+                <input
+                  id="candidate-radio"
+                  type="radio"
+                  name="candidate"
+                  value=""
+                />
+              </div>
+              <div class="candidate">
+                <div class="candidate-party">APC</div>
+                <label for="vote-radio">Oyeniyi Omotayo</label>
+                <input
+                  id="candidate-radio"
+                  type="radio"
+                  name="candidate"
+                  value=""
+                />
+              </div>
+              <div class="candidate">
+                <div class="candidate-party">APC</div>
+                <label for="vote-radio">Oyeniyi Omotayo</label>
+                <input
+                  id="candidate-radio"
+                  type="radio"
+                  name="candidate"
+                  value=""
+                />
+              </div>
+              <div class="candidate">
+                <div class="candidate-party">APC</div>
+                <label for="vote-radio">Oyeniyi Omotayo</label>
+                <input
+                  id="candidate-radio"
+                  type="radio"
+                  name="candidate"
+                  value=""
+                />
+              </div>
+              <input type="submit" class="vote-btn" value="Vote" />
+            </form>
+          </div>
+        </div>
+        <div class="vote-office">
+          <div class="office-name">senator</div>
+          <div class="vote-field">
+            <form action="">
+              <div class="candidate">
+                <div class="candidate-party">APC</div>
+                <label for="vote-radio">Oyeniyi Omotayo</label>
+                <input
+                  id="candidate-radio"
+                  type="radio"
+                  name="candidate"
+                  value=""
+                />
+              </div>
+              <div class="candidate">
+                <div class="candidate-party">APC</div>
+                <label for="vote-radio">Oyeniyi Omotayo</label>
+                <input
+                  id="candidate-radio"
+                  type="radio"
+                  name="candidate"
+                  value=""
+                />
+              </div>
+              <div class="candidate">
+                <div class="candidate-party">APC</div>
+                <label for="vote-radio">Oyeniyi Omotayo</label>
+                <input
+                  id="candidate-radio"
+                  type="radio"
+                  name="candidate"
+                  value=""
+                />
+              </div>
+              <div class="candidate">
+                <div class="candidate-party">APC</div>
+                <label for="vote-radio">Oyeniyi Omotayo</label>
+                <input
+                  id="candidate-radio"
+                  type="radio"
+                  name="candidate"
+                  value=""
+                />
+              </div>
+              <input type="submit" class="vote-btn" value="Vote" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ///toogle javascript -->
+    <script type="text/javascript">
+      (function() {
+        var menuButton = document.getElementById("toggle-menu");
+        menuButton.addEventListener("click", function(event) {
+          event.preventDefault();
+          var menu = document.getElementById("main-menu");
+          menu.classList.toggle("is-open");
+        });
+      })();
+    </script>
+  </body>
+</html>

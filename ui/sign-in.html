@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Politico | Sign up</title>
+    <link rel="stylesheet" href="css/enter.css" />
+  </head>
+
+  <body>
+    <header id="header" class="page-header">
+      <div class="title">
+        <div class="title-header"><a href="index.html">Politico</a></div>
+      </div>
+    </header>
+    <div class="container">
+      <form action="" class="login-form">
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Email Address" />
+        </div>
+        <div class="form-group">
+          <input type="password" name="password" placeholder="Password" />
+        </div>
+
+        <div class="form-group">
+          <button class="btn" type="submit">Login</button>
+        </div>
+        <div class="forgot">
+          <div id="remember-me">
+            <input type="checkbox" name="remember-me" />Remember me<br />
+          </div>
+          <div id="forgot-password">
+            <a href="./reset-password.html">Forgot password?</a>
+          </div>
+        </div>
+        <div class="login-signup ">
+          <a href="./sign-up.html">Sign-up here</a>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      let rememberMe = document.querySelector("#remember-me");
+      rememberMe.addEventListener("click", function(e) {
+        console.log(e.target);
+      });
+    </script>
+  </body>
+</html>

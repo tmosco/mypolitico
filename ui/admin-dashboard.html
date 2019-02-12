@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Admin for Politico</title>
+    <link rel="stylesheet" href="css/admin-style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="brand">Politico</a>
+      <nav class="menu" id="main-menu">
+        <button class="menu-toggle" id="toggle-menu">toggle menu</button>
+        <div class="menu-dropdown">
+          <ul class="nav-menu" id="headerNav" >
+            <li>
+              <a href="./admin-dashboard.html" class="active ">Home</a>
+            </li>
+            <li>
+              <a href="./admin-create-office.html" >Create Office</a>
+            </li>
+            <li>
+              <a href="./admin-create-party.html" >Create Party</a>
+            </li>
+            <li><a href="./index.html" ">Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="column1">
+      <div class="political-info">
+        <table class="table">
+          <caption>
+            Political Candidate
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Political Party</th>
+              <th scope="col">Political Role</th>
+              <th scope="col">Candidate Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="#">1</td>
+              <td data-label="Political-party">APC</td>
+              <td data-label="Political-role">President</td>
+              <td data-label="Candidate-name">Mohammed Buhari</td>
+            </tr>
+            <tr>
+              <td data-label="#">1</td>
+              <td data-label="Political-party">APC</td>
+              <td data-label="Political-role">President</td>
+              <td data-label="Candidate-name">Mohammed Buhari</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="users-info">
+        <table class="user-table">
+          <caption>
+            Users Info
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Voter Id</th>
+              <th scope="col">Full Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="#">1</td>
+              <td data-label="Voter-Id">12345wer</td>
+              <td data-label="Full-name">Oyeniyi Omotayo</td>
+              <td data-label="Email">tmocsco_tayo@yahoo.com</td>
+              <td data-label="Status">Actice</td>
+            </tr>
+            <tr>
+              <td data-label="#">1</td>
+              <td data-label="Voter-Id">12345wer</td>
+              <td data-label="Full-name">Oyeniyi Omotayo</td>
+              <td data-label="Email">tmocsco_tayo@yahoo.com</td>
+              <td data-label="Status">Actice</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </body>
+  <script type="text/javascript">
+    (function() {
+      var menuButton = document.getElementById("toggle-menu");
+      menuButton.addEventListener("click", function(event) {
+        event.preventDefault();
+        var menu = document.getElementById("main-menu");
+        menu.classList.toggle("is-open");
+      });
+    })();
+
+
+  </script>
+</html>

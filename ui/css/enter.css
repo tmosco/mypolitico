@@ -1,0 +1,304 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+input[type="button"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/* /////////////////////starting my css/////////////////// */
+
+* {
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3f9f3;
+}
+.title-header {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  color: #f4f9f4;
+  background-color: #5c8d89;
+  font-weight: 900;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 0;
+}
+.container {
+  margin-top: 167px;
+}
+.form {
+  margin: 17px 53px;
+}
+.form-group {
+  padding: 9px 1px;
+}
+.form-group > input:not([type="checkbox"]):not([type="radio"]) {
+  display: block;
+  width: 100%;
+  margin-top: 0;
+  padding: 6px 13px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 19px;
+}
+
+.btn {
+  background-color: #74b49b;
+  color: #f3f9f3;
+  font-size: 19px;
+  padding: 3px 12px;
+  border-radius: 5px;
+  margin: 7px 15px;
+  text-align: center;
+  border: 1px solid #f3f9f3;
+}
+
+h1 {
+  font-size: 22px;
+
+  text-align: center;
+  padding: 10px 1px;
+  color: #5e5e5e;
+  margin-top: 21px;
+}
+
+p {
+  color: #5e5e5e;
+  font-size: 21px;
+  text-align: center;
+}
+
+.forgot {
+  color: #5e5e5e;
+  font-size: 20px;
+}
+a {
+  color: inherit;
+}
+#forgot-password {
+  text-align: right;
+  color: #74b49b;
+  font-size: 19px;
+}
+
+.login-signup {
+  font-size: 22px;
+  padding: 1px 38px;
+  color: #74b49b;
+}
+
+@media (min-width: 50em) {
+  .form {
+    width: 46%;
+    margin: 1px 482px;
+    padding: 29px 211px;
+  }
+
+  .form-group > input:not([type="checkbox"]):not([type="radio"]) {
+    padding: 6px 13px;
+
+    font-size: 22px;
+  }
+
+  h1 {
+    font-size: 27px;
+    text-align: center;
+    padding: 28px 1px;
+    color: #5e5e5e;
+    margin-top: 49px;
+  }
+
+  p {
+    color: #5e5e5e;
+    font-size: 21px;
+    text-align: center;
+  }
+  .title-header {
+    font-size: 41px;
+  }
+
+  .login-form {
+    width: 26%;
+    margin-left: 678px;
+  }
+
+  .btn {
+    font-size: 28px;
+  }
+}

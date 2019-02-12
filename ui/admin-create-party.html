@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Admin for Politico</title>
+    <link rel="stylesheet" href="css/admin-style.css" />
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="brand">Politico</a>
+        <nav class="menu" id="main-menu">
+            <button class="menu-toggle" id="toggle-menu">toggle menu</button>
+            <div class="menu-dropdown">
+                <ul class="nav-menu">
+                    
+                    <li>
+                        <a href="./admin-dashboard.html" class="profile ">Home</a>
+                    </li>
+                    <li>
+                        <a href="./admin-create-office.html" class="profile ">Create Office</a>
+                    </li>
+                    <li>
+                        <a href="./admin-create-party.html" class=" active">Create Party</a>
+                    </li>
+                    <li><a href="./index.html" class="profile ">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="column1">
+        <div class="political-info">
+            <table class="table">
+                <h3>
+
+                    Party List
+                </h3>
+                <h1 class="create">create party <button class="add" id="open">add</button></h1>
+
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Party</th>
+                        <th>Leader</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><a class="party-name" href="#">APC</a></td>
+                                    <td>Bello Gambari</td>
+                                    <td>Active</td>
+                                    <td class="button">
+                                        <a class="view" href="#">View</a>
+                                        <a class="edit" href="post-form.html">Edit</a>
+                                        <a class="delete" href="#" onclick="return confirm('Are you sure?');">Delete</a>
+                                    </td>
+                                </tr>
+                                    <td>2</td>
+                                    <td><a class="party-name" href="#">PDP</a></td>
+                                    
+                                    <td>Tosin Fakeye</td>
+                                    <td>Draft</td>
+                                    <td class="button">
+                                        <a class="view" href="#">View</a>
+                                        <a class="edit" href="post-form.html">Edit</a>
+                                        <a class="delete" href="#" onclick="return confirm('Are you sure?');">Delete</a>
+                                    </td>
+                                    </tr>
+                   
+                </tbody>
+            </table>
+        </div>
+
+
+    </section>
+    <section>
+        <div class="modal" id="modal">
+            <div class="modal-backdrop"></div>
+            <div class="modal-body">
+                <button class="modal-close" id="close">
+                    <span class="sr-only">close</span>
+                </button>
+                <p class="h3">Create Political Party<p>
+                        <form class="form" action="" method="post">
+
+                            <div class="form-group">
+
+                                <input type="text" name="party-name" placeholder="Logo" />
+                            </div>
+                            <div class="form-group">
+
+                                <input type="text" name="party-leader" placeholder="Leader" />
+                            </div>
+                            <div class="form-group">
+
+                                <input type="text" name="Party-full-name" placeholder="Party Fullname" />
+                            </div>
+                            <div class="form-group">
+
+                                <textarea id="content" class="party-description" rows="10" columns="3"></textarea>
+                            </div>
+                            <div class="form-description">
+                                <label for="status">Status</label>
+                                <select id="status" class="status-bar">
+                                    <option value="1">Passive</option>
+                                    <option value="2">Awaiting</option>
+                                    <option value="3">Confirmed</option>
+                                </select>
+                            </div>
+
+                            <input type="hidden" name="id" value="1" />
+                            <button type="submit" class="btn save">
+                                Save
+                            </button>
+
+                        </form>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        (function () {
+            var menuButton = document.getElementById("toggle-menu");
+            menuButton.addEventListener("click", function (event) {
+                event.preventDefault();
+                var menu = document.getElementById("main-menu");
+                menu.classList.toggle("is-open");
+            });
+        })();
+
+
+
+
+        var button = document.getElementById('open');
+        var close = document.getElementById('close');
+        var modal = document.getElementById('modal');
+
+        button.addEventListener('click', function (event) {
+            event.preventDefault();
+            modal.style.display = 'block';
+        });
+
+        close.addEventListener('click', function (event) {
+            event.preventDefault();
+            modal.style.display = 'none';
+        });
+    </script>
+</body>
+
+</html>

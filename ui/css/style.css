@@ -1,0 +1,726 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+input[type="button"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+html body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+  color: #5e5e5e;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/* /////////////////////starting my css/////////////////// */
+
+* {
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f9f4;
+}
+header {
+  background-color: #5c8d89;
+  height: 100%;
+  width: 100%;
+}
+header .brand {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  color: #f4f9f4;
+  font-weight: 900;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* ///menu////// */
+.menu {
+  position: relative;
+}
+
+.menu-toggle {
+  position: absolute;
+  top: -38px;
+  right: 0.1em;
+  border: 0;
+  background-color: transparent;
+  font-size: 43px;
+  width: 1em;
+  height: 1em;
+  line-height: 0.4;
+  text-indent: 5em;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #f3f9f3;
+}
+.menu-toggle::after {
+  position: absolute;
+  top: 0.2em;
+  left: 0.2em;
+  display: block;
+  content: "\2261";
+  text-indent: 0;
+}
+
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0;
+}
+
+.menu.is-open .menu-dropdown {
+  display: block;
+}
+
+.menu.is-open .menu-dropdown {
+  display: block;
+}
+
+/**
+     * Nav menu
+     */
+.nav-menu {
+  margin: 0;
+  padding-left: 0;
+  border: 1px solid #5e5e5e;
+  list-style: none;
+  background-color: #5c8d89;
+  color: #f4f9f4;
+}
+
+.nav-menu > li + li {
+  border-top: 1px solid #ccc;
+}
+
+.nav-menu > li > a {
+  display: block;
+  padding: 0.8em 1em;
+  color: #fff;
+  font-weight: normal;
+}
+
+/* //////////////body section */
+
+.column-1 {
+  background-color: #f3f9f3;
+  padding: 12px 15px;
+}
+.column-2 {
+  padding: 12px 15px;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: row;
+}
+.my-votes {
+  display: flex;
+  flex-direction: row;
+  padding: 8px 10px;
+  font-size: 19px;
+}
+
+.user-header {
+  background-color: #5c8d89;
+  color: #f4f9f4;
+  text-align: center;
+  font-size: 28px;
+  padding: 4px 1px;
+
+  /* font-size: 24px; */
+}
+.myvotes-party {
+  margin-right: 12px;
+}
+.myvotes-office {
+  margin-right: 10px;
+}
+.myvotes-name {
+  font-weight: 900;
+}
+
+.user-text-info {
+  font-size: 20px;
+}
+
+.edit {
+  background-color: #74b49b;
+  font-size: 15px;
+}
+
+/* ///////////////////////////voterpage/////////////////// */
+.header {
+  background-color: red;
+  font-size: 18px;
+  text-align: center;
+}
+select#positions {
+  font-size: 16px;
+  margin: 0.6em 1.1em;
+  width: 50%;
+}
+div.form-group {
+  font-size: 20px;
+}
+
+/* ////modal form /////////////////// */
+
+.modal {
+  display: none;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.modal-body {
+  position: fixed;
+  top: 3em;
+  bottom: 3em;
+  right: 16%;
+  left: 10%;
+  padding: 2em 3em;
+  background-color: #f3f9f3;
+  overflow: auto;
+  z-index: 2;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.3em;
+  font-size: 2em;
+  height: 1.5em;
+  width: 1.5em;
+  cursor: pointer;
+  border: 0;
+}
+.modal-close::before {
+  display: block;
+  content: "\00D7";
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+}
+.h3 {
+  font-size: 21px;
+  font-weight: 600;
+  padding: 8px 0px;
+  color: #5c8d89;
+}
+.consent-form {
+  text-align: center;
+}
+.agreement {
+  text-align: left;
+  padding: 8px 1px;
+  font-weight: 600;
+}
+
+.btn {
+  background-color: #74b49b;
+
+  color: #f3f9f3;
+  font-size: 18px;
+  padding: 3px 7px;
+  border-radius: 5px;
+}
+
+.form-group {
+  padding: 12px 1px;
+}
+.form-group > input {
+  border-radius: 4px;
+  font-size: 14px;
+  padding-left: 6px;
+}
+/* ////////////////////all political parties //////////////////// */
+.wrapper {
+  text-align: center;
+}
+
+.wrapper > h1 {
+  font-size: 23px;
+  margin: 8px 3px;
+}
+
+.table {
+  margin: 6px 43px;
+
+  text-align: center;
+}
+td {
+  padding: 7px;
+  color: #5e5e5e;
+  font-weight: 600;
+  font-size: 17px;
+}
+th {
+  border: collapse;
+  font-weight: 800;
+  background-color: #5c8d89;
+  color: #f3f9f3;
+  font-size: 21px;
+  padding: 4px 19px;
+}
+
+a.party-name {
+  color: #5e5e5e;
+}
+
+/* ////////////view candidates //////////////// */
+h3 {
+  text-align: center;
+  color: #5c8d89;
+  font-size: 23px;
+  margin: 8px 3px;
+}
+.vote-header {
+  font-size: 25px;
+  text-align: center;
+}
+
+select {
+  background-color: #74b49b;
+  color: #f3f9f3;
+  font-size: 15px;
+  border-radius: 6px;
+  text-align: center;
+  padding: 3px 8px;
+  margin: 3px 45px;
+  display: flex;
+  flex-direction: rows;
+}
+label {
+  font-size: 17px;
+}
+
+.container > .table {
+  margin: 6px 8px;
+}
+
+.candidate {
+  display: flex;
+  padding: 2px 19px;
+  margin: 1px px;
+  margin: 4px 25px;
+}
+.candidate-party {
+  padding: 1px 11px;
+}
+.candidate > label {
+  font-size: 17px;
+  padding: 1px 7px;
+  margin-right: 40px;
+}
+
+.office-name {
+  background-color: #5c8d89;
+  color: #f3f9f3;
+  font-size: 28px;
+  text-align: center;
+  padding: 1px 28px;
+  width: 50%;
+  margin-left: 68px;
+  border-radius: 7px;
+}
+.vote-office {
+  border: 1px solid #5c8d89;
+  border-radius: 21px;
+  text-align: center;
+  margin: 20px 1px;
+}
+
+.vote-btn {
+  background-color: #74b49b;
+  color: #f3f9f3;
+  font-size: 17px;
+  font-weight: 700;
+  border-color: #f3f9f3;
+  border-radius: 5px;
+  padding: 3px 9px;
+}
+.vote-1 {
+  background-color: #f3f9f3;
+  padding: 12px 15px;
+}
+
+.active {
+  text-decoration: double;
+  text-decoration-line: underline;
+}
+
+@media (min-width: 50em) {
+  .menu-toggle {
+    display: none;
+  }
+  .menu-dropdown {
+    display: block;
+  }
+  .nav-menu {
+    display: flex;
+    position: static;
+    border: 0;
+    padding: 0 1em;
+    justify-content: flex-end;
+  }
+
+  .nav-menu > li + li {
+    border: 0;
+  }
+
+  .nav-menu > li > a {
+    padding: 1px 12px;
+
+    font-size: 32px;
+  }
+  header .brand {
+    font-weight: 900;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 14px;
+    font-size: 54px;
+    text-align: left;
+  }
+  .user-text-info {
+    font-size: 36px;
+    margin: 39px 5px;
+  }
+
+  .edit {
+    font-size: 15px;
+  }
+  .user-name {
+    margin-right: 1px;
+  }
+
+  .user-header {
+    font-size: 50px;
+    margin: 1px 300px;
+  }
+  .my-votes {
+    margin: 13px 548px;
+    font-size: 35px;
+    padding: 6px 1px;
+  }
+  .edit {
+    background-color: #f3f9f3;
+    font-size: 22px;
+    color: #74b49b;
+  }
+
+  /* ///////////////////////////form/////////////// */
+
+  .political-info {
+    margin: 2px 178px;
+    text-align: center;
+    font-size: 25px;
+    padding: 37px 303px;
+  }
+  .terms {
+    padding: 17px 1px;
+   
+  }
+  .btn {
+    font-size: 25px;
+    padding: 6px 7px;
+  }
+  .h3 {
+    font-size: 36px;
+    text-align: center;
+  }
+  .form {
+    margin: 1px 102px;
+    padding: 41px 245px;
+  }
+
+  .form-group > input {
+    font-size: 28px;
+  }
+  .modal-body {
+    position: fixed;
+    top: 3em;
+    bottom: -2em;
+    right: 23%;
+    left: 19%;
+    padding: 2em 0em;
+    background-color: #f3f9f3;
+    overflow: auto;
+    z-index: 2;
+  }
+
+  /* /////////////////////////politico party///////////// */
+  .wrapper {
+    margin-top: 48px;
+  }
+
+  .wrapper > h1 {
+    font-size: 45px;
+    padding: 10px;
+  }
+  .party-info {
+    margin-left: 328px;
+    padding: 8px 297px;
+  }
+  td {
+    padding: 10px;
+    font-size: 27px;
+  }
+  th {
+    font-size: 32px;
+    padding: 9px 48px;
+  }
+
+  select {
+    font-size: 28px;
+    margin: 0px 13px;
+    color: #5e5e5e;
+  }
+  label {
+    font-size: 27px;
+  }
+  .select-1 {
+    display: flex;
+  }
+  .select-group {
+    display: flex;
+  }
+  h3 {
+    font-size: 47px;
+  }
+  .container > .table {
+    margin: 6px 583px;
+  }
+
+  /* /////////////////voting    */
+
+  .candidate {
+    display: flex;
+    padding: 2px 19px;
+    margin: 1px px;
+    margin: 4px 25px;
+  }
+  .candidate-party {
+    padding: 1px 11px;
+  }
+  .candidate > label {
+    font-size: 30px;
+    padding: 1px 7px;
+    margin-right: 40px;
+  }
+
+  .office-name {
+    font-size: 46px;
+
+    margin-left: 100px;
+  }
+  .vote-office {
+    font-size: 30px;
+  }
+
+  .vote-btn {
+    padding: 9px 28px;
+  }
+  .vote-1 {
+    background-color: #f3f9f3;
+    padding: 54px 15px;
+  }
+  .vote-form {
+    margin: 12px 595px;
+  }
+
+  input[type="radio"] {
+    background-color: red;
+  }
+
+  .vote-header {
+    font-size: 35px;
+  }
+}

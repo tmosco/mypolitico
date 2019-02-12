@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Politico | page</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" class="brand">Politico</a>
+      <nav class="menu" id="main-menu">
+        <button class="menu-toggle" id="toggle-menu">toggle menu</button>
+        <div class="menu-dropdown">
+          <ul class="nav-menu">
+            <li><a href="./user-dashboard.html">Dashboard</a></li>
+            <li><a href="./voting-page.html">Vote</a></li>
+            <li><a href="./cadidate-page.html">Candidate</a></li>
+            <li><a href="./create-platform.html" class="active">Contest</a></li>
+            <li><a href="./political-party.html">Political party</a></li>
+            <li><a href="./index.html">Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <div class="row">
+        <section class="column-1">
+          <div class="user-text-info">
+            <div class="user-bio">
+              <div class="user-details">
+                Name:
+                <div class="user-name">Oyeniyi Omotayo</div>
+              </div>
+              <div class="user-details">
+                voterID:
+                <div class="user-name">123456ABC</div>
+              </div>
+              <div class="user-details">
+                State:
+                <div class="user-name">Lagos</div>
+              </div>
+              <div class="user-details">
+                Gender:
+                <div class="user-name">Male</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="consent-form">
+          <div class="political-info">
+            <h2>Terms and Conditions</h2>
+            <p class="terms">
+              All candidates applying for a government office must be without any criminal 
+              record expect pardoned by a Judge.The constitution must be upheld and there must not
+              be any hint of vote buying
+              All party must be registered at INEC and a comnfirmation should be section
+              enabling you to percitipate in any election carried out on this platform.
+              All candidate must be a citizen of the country the Office is located.
+            </p>
+            <div class="agreement">
+              <input type="checkbox" name="agreement" id="" />Agree to terms
+            </div>
+
+            <button class="btn" id="open">Consent</button>
+          </div>
+        </section>
+        <section>
+          <div class="modal" id="modal">
+            <div class="modal-backdrop"></div>
+            <div class="modal-body">
+              <button class="modal-close" id="close">
+                <span class="sr-only">close</span>
+              </button>
+              <p class="h3">Choose your office</p>
+              <p></p>
+              <form class="form" action="" method="post">
+                
+                  <div class="form-group">
+                    
+                    <input type="text" name="party-name" placeholder="Political Party" />
+                  </div>
+                  <div class="form-group">
+                
+                    <input type="text" name="office" placeholder="Office" />
+                  </div>
+                  <div class="form-group">
+                   
+                    <input type="text" name="Party-full-name" placeholder="Ward" />
+                  </div>
+
+                  <input type="hidden" name="id" value="1" />
+                  <button type="submit" class="btn">Apply</button>
+               
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script type="text/javascript">
+          (function () {
+              var menuButton = document.getElementById('toggle-menu');
+              menuButton.addEventListener('click', function (event) {
+                  event.preventDefault();
+                  var menu = document.getElementById('main-menu');
+                  menu.classList.toggle('is-open');
+              });
+          })();
+
+      var button = document.getElementById('open');
+      var close = document.getElementById('close');
+      var modal = document.getElementById('modal');
+
+      button.addEventListener('click', function (event) {
+          event.preventDefault();
+          modal.style.display = 'block';
+      });
+
+      close.addEventListener('click', function (event) {
+          event.preventDefault();
+          modal.style.display = 'none';
+      });
+
+      
+    </script>
+  </body>
+</html>

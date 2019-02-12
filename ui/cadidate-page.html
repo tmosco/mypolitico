@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Politico | View Candidate</title>
+    <link rel="stylesheet" href="css/style.css">
+   
+</head>
+
+<body>
+        <header>
+            <a href="index.html" class="brand">Politico</a>
+            <nav class="menu" id="main-menu">
+                <button class="menu-toggle" id="toggle-menu">
+                    toggle menu
+                </button>
+                <div class="menu-dropdown">
+                    <ul class="nav-menu">
+                        <li><a href="./user-dashboard.html">Dashboard</a></li>
+                        <li><a href="./voting-page.html">Vote</a></li>
+                        <li><a href="./cadidate-page.html" class="active">Candidate</a></li>
+                        <li><a href="./create-platform.html">Contest</a></li>
+                        <li><a href="./political-party.html">Political party</a></li>
+                        <li><a href="./index.html">Logout</a></li>
+        
+        
+                    </ul>
+                </div>
+            </nav>
+        
+        
+        
+        </header>
+    <div class="container">
+
+        <form class="form" action="" method="post">
+        
+        <div class="form-group">
+               
+
+            <div id="political-party" class="select ">
+                <div class="select-1">
+
+                    <label for="party">Select Government Office: </label>
+                    <select name="office" id="office">
+                        <option>President</option>
+                        <option>Governor</option>
+                        <option>Senator</option>
+                    </select>
+                </div>
+                <div class="select-2">
+
+                </div>
+                <div id="governor-selected" class="select-group hide ">
+                    <label for="party">Select State: </label>
+                    <select name="office" id="select-group">
+                        <option>Select</option>
+                        <option>Lagos</option>
+                        <option>Osun</option>
+                        <option>Kano</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+
+            
+
+        </form>
+        <div class="candidates">
+            <h3> <span >Governor</span> Candidates</h3>
+
+        </div>
+        <div class="table">
+            <table id="customers">
+                <tr>
+                    <th>Party</th>
+                    <th>Candidate</th>
+                    <th>State</th>
+                    
+                </tr>
+                <tr>
+                    <td>APC</td>
+                    <td>Maria Anders</td>
+                    <td>Lagos</td>
+                </tr>
+                
+                <tr>
+                    <td>PDP</td>
+                    <td>Philip Cramer</td>
+                    <td>Lagos</td>
+                </tr>
+                <tr>
+                    <td>APC</td>
+                    <td>Yoshi Tannamuri</td>
+                    <td>Lagos</td>
+                </tr>
+                <tr>
+                    <td>ADC</td>
+                    <td>Giovanni Rovelli</td>
+                    <td>Lagos</td>
+                </tr>
+                <tr>
+                    <td>APC</td>
+                    <td>Simon Crowther</td>
+                    <td>Lagos</td>
+                </tr>
+                <tr>
+                    <td>APC</td>
+                    <td>Marie Bertrand</td>
+                    <td>Lagos</td>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+<script type="text/javascript">
+    (function () {
+        var menuButton = document.getElementById('toggle-menu');
+        menuButton.addEventListener('click', function (event) {
+            event.preventDefault();
+            var menu = document.getElementById('main-menu');
+            menu.classList.toggle('is-open');
+        });
+    })();
+   
+       let select = document.querySelector('#office');
+        let small_office = document.getElementById('select-group');
+        if (president === "President") {
+                small_office.className = 'select-group hide'
+            } ;
+
+        
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+</script>
+    
+
+  
+</body>
+
+</html>

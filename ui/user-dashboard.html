@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Politico | dashboard</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+   <header>
+       <a href="index.html" class="brand">Politico</a>
+        <nav class="menu" id="main-menu">
+        <button class="menu-toggle" id="toggle-menu">
+            toggle menu
+        </button>
+        <div class="menu-dropdown">
+            <ul class="nav-menu">
+                <li><a href="./user-dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="./voting-page.html">Vote</a></li>
+                <li><a href="./cadidate-page.html">Candidate</a></li>
+                <li><a href="./create-platform.html">Contest</a></li>
+            <li><a href="./political-party.html">Political party</a></li>
+            <li><a href="./index.html">Logout</a></li>
+    
+
+            </ul>
+        </div>
+    </nav>
+
+
+
+   </header>
+   <main>
+       <div class="row">
+       <section class="column-1">
+        <div class="user-text-info">
+            <div class="user-bio">
+        
+                <div class="user-details">
+                    Name:
+                    <div class="user-name">Oyeniyi Omotayo</div>
+                </div>
+                <div class="user-details">
+                    voterID:
+                    <div class="user-name">123456ABC</div>
+                </div>
+                <div class="user-details">
+                    State:
+                    <div class="user-name">Lagos</div>
+                </div>
+                <div class="user-details">
+                    Gender:
+                    <div class="user-name">Male</div>
+                </div>
+        
+            </div>
+            <a href="http://" class="edit" id="open">Edit Profile</a>
+        
+            
+        </div>
+
+
+
+       </section>
+       <section class="column-2">
+          
+                <div class="myvotes">
+                    <div class="user-header">My votes</div>
+                    <div class="my-votes" id="">
+                        <div class="myvotes-party" id="">PDP</div>
+                        <div class="myvotes-office" id="myvotes-office">President : </div>
+                        <div class="myvotes-name" id="">Mohammed Buhari</div>
+                    </div>
+                    <div class="my-votes" id="">
+                        <div class="myvotes-party" id="">PDP</div>
+                        <div class="myvotes-office" id="myvotes-office">Governor : </div>
+                        <div class="myvotes-name" id="">Jimmy Agbaje</div>
+                    </div>
+                    </div>
+                    <div class="winner">
+                        <div class="user-header">Results</div>
+                        <div class="my-votes" id="">
+                            <div class="myvotes-party" id="">PDP</div>
+                            <div class="myvotes-office" id="myvotes-office">President</div>
+                            <div class="myvotes-name" id="">Mohammed Buhari</div>
+                        </div>
+                    </div>
+
+                </section>
+                <section>
+                    <div class="modal" id="modal">
+                        <div class="modal-backdrop"></div>
+                        <div class="modal-body">
+                            <button class="modal-close" id="close">
+                                <span class="sr-only">close</span>
+                            </button>
+                            <p class="h3">Edit Profile<p>
+                                    <form class="form" action="" method="post">
+                
+                                        <div class="form-group">
+                
+                                            <input type="text" name="party-name" placeholder="Fullname" />
+                                        </div>
+                                        <div class="form-group">
+                                        
+                                            <input type="text" name="Party-full-name" placeholder="Gender" />
+                                        </div>
+                                        <div class="form-group">
+                
+                                            <input type="text" name="party-leader" placeholder="State" />
+                                        </div>
+                                        <div class="form-group">
+                
+                                            <input type="text" name="Party-full-name" placeholder="Address" />
+                                        </div>
+                                        <div class="form-group">
+                
+                                            <input type="text" name="Party-full-name" placeholder="" />
+                                        </div>
+                                        
+                                        
+                
+                                        <input type="hidden" name="id" value="1" />
+                                        <button type="submit" class="btn save">
+                                            Save
+                                        </button>
+                
+                                    </form>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+   </main>
+   
+ 
+ <script type="text/javascript">
+    (function () {
+        var menuButton = document.getElementById("toggle-menu");
+        menuButton.addEventListener("click", function (event) {
+            event.preventDefault();
+            var menu = document.getElementById("main-menu");
+            menu.classList.toggle("is-open");
+        });
+    })();
+
+
+
+
+    var button = document.getElementById('open');
+    var close = document.getElementById('close');
+    var modal = document.getElementById('modal');
+
+    button.addEventListener('click', function (event) {
+        event.preventDefault();
+        modal.style.display = 'block';
+    });
+
+    close.addEventListener('click', function (event) {
+        event.preventDefault();
+        modal.style.display = 'none';
+    });
+</script>
+</body>
+</html>
